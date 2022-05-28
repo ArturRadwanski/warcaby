@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "name": "warcaby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturRadwanski/warcaby.git"
+  },
+  "author": "Artur Radwański",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturRadwanski/warcaby/issues"
+  },
+  "homepage": "https://github.com/ArturRadwanski/warcaby#readme",
+  "description": ""
 }
