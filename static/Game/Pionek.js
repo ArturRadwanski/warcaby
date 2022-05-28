@@ -3,7 +3,9 @@ class Pionek extends THREE.Mesh {
     //element = 1 -> biały , 2 -> czarny
     super();
     this.geometry = new THREE.CylinderGeometry(4, 4, 2, 64);
-    const texture = new THREE.TextureLoader().load("/textures/wood.jpg");
+    const texture = new THREE.TextureLoader().load(
+      "https://i.imgur.com/G5BHhE9.jpeg"
+    );
     this.material = new THREE.MeshBasicMaterial({
       color: element == 1 ? 0xffffff : 0xff4444,
       map: texture,

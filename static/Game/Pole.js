@@ -2,7 +2,9 @@ class Pole extends THREE.Mesh {
   constructor(element) {
     //element = 0 -> białe pole, 1 -> czarne pole
     super(); // wywołanie konstruktora klasy z której dziedziczymy czyli z Mesha
-    const texture = new THREE.TextureLoader().load("/textures/wood2.jpg");
+    const texture = new THREE.TextureLoader().load(
+      "https://i.imgur.com/Ez3Iox2.jpeg"
+    );
     this.material = new THREE.MeshBasicMaterial({
       color: element == 0 ? 0xdddddd : 0x444444,
       map: texture,
