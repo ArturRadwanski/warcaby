@@ -17,9 +17,21 @@
   font-size: 35px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+#clock {
+  border: black solid 1px;
+  margin-right: 10px;
+  height: 80%;
+  width: 100px;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
 }
 #status span {
   color: white;
+  margin-left: 5px;
 }
 #root.login-shade {
   position: absolute;
@@ -43,10 +55,10 @@
   border-radius: 25%;
   z-index: 9;
 }
-#timer.hidden{
-  display:none;
+#timer.hidden {
+  display: none;
 }
-#timer{
+#timer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,15 +73,19 @@
   left: 0;
   background-color: black;
 }
-#wait{
+#wait {
   display: none;
   background-color: black;
   z-index: 10;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100vh;
   position: absolute;
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
 }
-#wait > p{
-  margin: auto;
+#wait > p {
+  display: flex;
+  position: relative;
   color: white;
 }

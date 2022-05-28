@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="pl_PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warcaby</title>
+    <script src="/three.js"></script>
+    <script src="Game/Pionek.js"></script>
+    <script src="Game/Pole.js"></script>
+    <script src="Game/Game.js"></script>
+    <script src="/Ui.js"></script>
+    <script src="/Net.js"></script>
+    <script src="/Main.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Warcaby</title>
-  <script src="/three.js"></script>
-  <script src="Game/Pionek.js"></script>
-  <script src="Game/Pole.js"></script>
-  <script src="Game/Game.js"></script>
-  <script src="/Ui.js"></script>
-  <script src="/Net.js"></script>
-  <script src="/Main.js"></script>
-  <link rel="stylesheet" href="/style.css" />
-</head>
-
-<body>
-  <div id="container">
-    <div id="status">Status</div>
-    <div id="login-form">
-      <h1>Login</h1>
-      <input type="text" id="login-data" placeholder="nick" />
-      <button id="btn-login">login</button>
-      <button id="reset">reset</button>
+  <body>
+    <div id="container">
+      <div id="status">
+        Status
+        <div id="clock">30</div>
+      </div>
+      <div id="login-form">
+        <h1>Login</h1>
+        <input type="text" id="login-data" placeholder="nick" />
+        <button id="btn-login">login</button>
+        <button id="reset">reset</button>
+      </div>
+      <div id="wait">
+        <p>Waiting for another player</p>
+      </div>
+      <div id="root" class="login-shade"></div>
+      <div id="timer" class="hidden"></div>
     </div>
-    <div id="wait">
-      <p>Waiting for another player</p>
-    </div>
-    <div id="root" class="login-shade"></div>
-    <div id="timer" class="hidden"></div>
-  </div>
-</body>
-
+  </body>
 </html>
