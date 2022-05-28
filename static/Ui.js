@@ -35,6 +35,7 @@ class Ui {
             console.log(res.tab);
             window.onmousedown = (e) => this.game.handleClick(e);
             game.rebuild();
+            this.turnOnClock();
           });
         } else {
           this.game.player = "white";
