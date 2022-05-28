@@ -51,6 +51,7 @@ class Ui {
   }
   turnOnTimer() {
     let timer = document.getElementById("timer");
+    document.getElementById("clock").style.visibility = "hidden";
     timer.innerText = "30";
     timer.classList = "";
     this.interval = setInterval(() => {
@@ -65,6 +66,7 @@ class Ui {
     }, 1000);
   }
   afterMove() {
+    clearInterval(this.interval);
     this.turnOnTimer();
     window.onmousedown = () => console.log("wait for your move!");
     this.net.updateTab(this.game.players).then((res) => {
